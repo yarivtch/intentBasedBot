@@ -24,12 +24,25 @@ const PrisonServiceChatbot = () => {
     const [messages, setMessages] = useState([
       {
         type: 'bot',
-        content: 'שלום! אני הצ\'אט בוט של שירות בתי הסוהר. איך אוכל לעזור לך?'
+        content: 'שלום! אני צ\'אט בוט לזיהוי כוונות. איך אוכל לעזור לך?'
       }
     ]);
     const [input, setInput] = useState('');
     const [isTyping, setIsTyping] = useState(false);
     const messagesEndRef = useRef(null);
+
+    useEffect(() => {
+        scrollToBottom();
+    }, [messages]);
+
+    const scrollToBottom = () => {
+        setTimeout(() => {
+            messagesEndRef.current?.scrollIntoView({ 
+                behavior: "smooth",
+                block: "end"
+            });
+        }, 100);
+    };
     // פונקציה משופרת למציאת כוונה
     const findIntent = (query) => {
         query = query.toLowerCase();
@@ -112,6 +125,9 @@ const PrisonServiceChatbot = () => {
             content: knowledgeBase[intent].תשובה
             }
         ]);
+        setTimeout(() => {
+            messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+        }, 100);
         }
     };
 
@@ -120,7 +136,7 @@ const PrisonServiceChatbot = () => {
         <div className="flex flex-col h-[600px] max-w-2xl mx-auto bg-gray-50 rounded-lg shadow-xl overflow-hidden">
         {/* Header */}
         <div className="bg-blue-600 text-white p-4 text-right">
-            <h1 className="text-xl font-bold">צ'אט בוט שירות בתי הסוהר</h1>
+            <h1 className="text-xl font-bold">צ'אט בוט זיהוי כוונות</h1>
         </div>
 
         {/* Categories with improved styling */}
