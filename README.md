@@ -36,7 +36,7 @@
 
 1. **שכפול הפרויקט**
 ```bash
-git clone https://github.com/your-username/chatWIthRag.git
+git clone https://github.com/yarivtch/intentBasedBot.git
 cd chatWIthRag
 ```
 
@@ -125,7 +125,7 @@ The system consists of three main components:
 
 1. **Clone the project**
 ```bash
-git clone https://github.com/your-username/chatWIthRag.git
+git clone https://github.com/yarivych/intentBasedBot.git
 cd chatWIthRag
 ```
 
