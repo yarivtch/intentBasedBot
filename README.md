@@ -37,7 +37,7 @@
 1. **שכפול הפרויקט**
 ```bash
 git clone https://github.com/yarivtch/intentBasedBot.git
-cd chatWIthRag
+cd intentBasedBot
 ```
 
 2. **התקנת תלויות**
@@ -126,7 +126,7 @@ The system consists of three main components:
 1. **Clone the project**
 ```bash
 git clone https://github.com/yarivych/intentBasedBot.git
-cd chatWIthRag
+cd intentBasedBot
 ```
 
 2. **Install dependencies**
