@@ -24,7 +24,7 @@ const PrisonServiceChatbot = () => {
     const [messages, setMessages] = useState([
       {
         type: 'bot',
-        content: 'שלום! ניתן ללחוץ על אחד הנושאים למעלה כדי לקבל את המידע הרצוי. בנוסף. אפשר לשאול שאלות אחרות. איך אוכל לעזור לך? '
+        content: 'שלום! ניתן ללחוץ על אחד הנושאים למעלה כדי לקבל את המידע הרצוי. בנוסף, אפשר לשאול שאלות אחרות. איך אוכל לעזור לך? '
       }
     ]);
     const [input, setInput] = useState('');
